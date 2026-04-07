@@ -5,21 +5,21 @@
 class Tokfresh < Formula
   desc "Automate your Claude token reset timing via Cloudflare Workers"
   homepage "https://github.com/stevejkang/tokfresh-cli"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stevejkang/tokfresh-cli/releases/download/v0.0.1/tokfresh_0.0.1_darwin_amd64.tar.gz"
-      sha256 "7e9aad3d652745cae2948411ba7df16593371c99d4a91e163fd10fec156b23da"
+      url "https://github.com/stevejkang/tokfresh-cli/releases/download/v0.0.2/tokfresh_0.0.2_darwin_amd64.tar.gz"
+      sha256 "79faa978e3e41c74b4243ff0d6c7b371cdf993352a114a34018f9928f81da4b8"
 
       define_method(:install) do
         bin.install "tokfresh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stevejkang/tokfresh-cli/releases/download/v0.0.1/tokfresh_0.0.1_darwin_arm64.tar.gz"
-      sha256 "ad0db4f24bd321bb191e0ef3c884c5d3a1ba658d32fce201b72a6f909ee6c6fd"
+      url "https://github.com/stevejkang/tokfresh-cli/releases/download/v0.0.2/tokfresh_0.0.2_darwin_arm64.tar.gz"
+      sha256 "2229e88cd32eac7c83dbb3cf62b3534f0de099f675a2115e46134319c67c1d81"
 
       define_method(:install) do
         bin.install "tokfresh"
@@ -29,15 +29,15 @@ class Tokfresh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stevejkang/tokfresh-cli/releases/download/v0.0.1/tokfresh_0.0.1_linux_amd64.tar.gz"
-      sha256 "8ce4252dbbe2215b6944fe3311b876fde2a3b3324edc61b53fbb1cb8c3769913"
+      url "https://github.com/stevejkang/tokfresh-cli/releases/download/v0.0.2/tokfresh_0.0.2_linux_amd64.tar.gz"
+      sha256 "44e5272097e4d0f13472512099203cad8677b8a3856da0ed3c1b2d5649455dce"
       define_method(:install) do
         bin.install "tokfresh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stevejkang/tokfresh-cli/releases/download/v0.0.1/tokfresh_0.0.1_linux_arm64.tar.gz"
-      sha256 "a0c0f84af60e96f66bf9209e91f9bdee3dfb9e24e9283cd7ae2de8f3b4f7d112"
+      url "https://github.com/stevejkang/tokfresh-cli/releases/download/v0.0.2/tokfresh_0.0.2_linux_arm64.tar.gz"
+      sha256 "03d0e60a8053853c48a3e898c7434cb5a2bb6c2f8a91d51712cf57c68936da34"
       define_method(:install) do
         bin.install "tokfresh"
       end
